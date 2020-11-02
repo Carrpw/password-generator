@@ -51,4 +51,28 @@ function writePassword() {
   
   console.log(passwordArray)
     
+  if (password.specialCharacters) {
+    for (i = 0; i < special.length; ++i) {
+      passwordArray.push(special[i]);
+    }
+  } 
+
+  if (password.numericCase) {
+    for (i = 0; i < numeric.length; ++i) {
+    passwordArray.push(numeric[i]);
+    }
+  }
+
+  if (password.lowerCase) {
+    for (i = 0; i < lower.length; ++i) {
+    passwordArray.push(lower[i]);
+    }
+  }
+
+  if (password.upperCase) {
+    for (i = 0; i < upper.length; ++i) {
+    passwordArray.push(upper[i]);
+    }
+  }
+
   
