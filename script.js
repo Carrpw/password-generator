@@ -41,3 +41,14 @@ function generatePassword() {
 
 }
 
+function writePassword() {
+
+  var password = generatePassword();
+  
+  console.log(password)
+    
+  var passwordArray = [];
+  
+  console.log(passwordArray)
+    
+  
