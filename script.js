@@ -75,4 +75,11 @@ function writePassword() {
     }
   }
 
-  
+  var thePassword = [];
+    
+  for (let i = 0; i < password.length; ++i) {
+    var randomPicker = Math.floor(Math.random() * Math.floor(passwordArray.length));
+    thePassword.push(passwordArray[randomPicker])
+  }
+   
+ 
