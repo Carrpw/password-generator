@@ -19,4 +19,14 @@ function generatePassword() {
     return;
   }
 
- 
+  var uppercase1 = confirm("Do you want to include uppercase characters?");
+  var lowercase1 = confirm("Do you want to include lowercase characters?");
+  var numeric1 = confirm("Do you want to include numeric characters?");
+  var special1 = confirm("Do you want to include special characters?");
+    
+  if (!uppercase1 && !lowercase1 && !numeric1 && !special1) {
+    alert("Your password must contain at least one uppercase, lowercase, numeric, or special character.");
+    return;
+  }
+
+  
