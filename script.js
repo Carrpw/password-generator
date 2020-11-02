@@ -29,4 +29,15 @@ function generatePassword() {
     return;
   }
 
-  
+  var criteria = {
+    length: length,
+    upperCase: uppercase1,
+    lowerCase: lowercase1,
+    numericCase: numeric1,
+    specialCharacters: special1,
+  }
+
+  return criteria;
+
+}
+
