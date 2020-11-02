@@ -82,4 +82,14 @@ function writePassword() {
     thePassword.push(passwordArray[randomPicker])
   }
    
- 
+  console.log(thePassword)
+
+  var superSecretPassword = thePassword.join('');
+    
+  console.log(superSecretPassword)
+    
+  document.querySelector("#password").textContent = superSecretPassword;
+}
+
+// Add event listener to generate button
+generateBtn.addEventListener('click', writePassword);
